@@ -29,12 +29,51 @@
             -webkit-background-clip: text;
             background-clip: text;
         }
+        img{
+            cursor: pointer;
+        }
     </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        function loadFriends(){
+            var friends = document.getElementById("friends");
+            friends.style.display = 'inline';
+            panda.style.display = 'none';
+            lol.style.display = 'none';
+        }
+        function loadPanda(){
+            var panda = document.getElementById("panda");
+            friends.style.display = 'none';
+            panda.style.display = 'inline';
+            lol.style.display = 'none';
+        }
+        function loadLol(){
+            var lol = document.getElementById("lol");
+            friends.style.display = 'none';
+            panda.style.display = 'none';
+            lol.style.display = 'inline';
+        }
+    </script>
 </head>
 <body>
     <h1 style="color: darkslateblue; text-shadow: 0px 0px 3px darkslateblue;">01-08-2020</h1>
-    <video width="320" height="280" controls>
+    <div>
+        <img border="0" alt="Class" src="friends.png" width="60" height="60" onclick="loadFriends()">
+        &nbsp;
+        <img border="0" alt="Karthik" src="panda.png" width="60" height="60" onclick="loadPanda()">
+        &nbsp;
+        <img border="0" alt="Lohith" src="lol.png" width="60" height="60" onclick="loadLol()">
+    </div>
+    <video id="friends" width="320" height="280" controls>
         <source src="bday.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video id="panda" width="320" height="280" controls style="display: none;">
+        <source src="panda.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video id="lol" width="320" height="280" controls style="display: none;">
+        <source src="lol.3gpp" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div>
