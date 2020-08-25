@@ -6,8 +6,12 @@
     <title>My Day @ 2020</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <style>
+        ::selection{
+            color: teal;
+            background-color: black;
+        }
         body{
-            background-image: url("purple.jpg");
+            background-color: #0d101e;
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
@@ -33,22 +37,18 @@
             cursor: pointer;
         }
     </style>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>
-        function loadFriends(){
-            var friends = document.getElementById("friends");
+        function loadFriends(){        
             friends.style.display = 'inline';
             panda.style.display = 'none';
             lol.style.display = 'none';
         }
-        function loadPanda(){
-            var panda = document.getElementById("panda");
+        function loadPanda(){          
             friends.style.display = 'none';
             panda.style.display = 'inline';
             lol.style.display = 'none';
         }
-        function loadLol(){
-            var lol = document.getElementById("lol");
+        function loadLol(){          
             friends.style.display = 'none';
             panda.style.display = 'none';
             lol.style.display = 'inline';
@@ -134,6 +134,7 @@
         <h2><span class="queen">Vibhaaaa</span></h2>
         <h2><span class="king">Yaaashwanth</span></h2>
 
+        <h2><span class="queen">Deekshitha</span></h2>
         <h2><span class="queen">Vyshnavi</span></h2>
         <h2><span class="queen">Pranathi</span></h2>
         <h2><span class="queen">Unnathi</span></h2>
